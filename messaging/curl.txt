@@ -1,0 +1,9 @@
+curl -X POST -H "Authorization: key=AAAAcGkCCTM:APA91bHwgKpIiDeXyuqjO5gPEjITLjJcmq3hvUh2h2xoQ8rrRqnATSPdH1Bw7o9w60w2I3WXg9kJWz7OKUjDUxZvZj2s7plFHGE7NUUtV4b46vcKWpTmPrNV2BetZh6vTC2RNGU00B66" -H "Content-Type: application/json" -d '{
+  "notification": {
+    "title" : "The World",
+    "body": "Is me, bot!",
+    "image": "https://cdn.iconscout.com/icon/free/png-256/apple-853-675472.png",
+    "click_action": "http://localhost:8080/hello"
+  }
+  "to": "dMPGkKFKXbp6tW3GCB-XAj:APA91bEG4yiW7FLeA6LlxdAvznYYw8UJiWerP6H7K5WEaSm8GPO1RbXtoHsmWx97l8va7GASlFN48LL_aUImw8rU4-Npl2YuL2UEKA4z1ylME8e0OUkkqZFpSgTCuqTgmQxLIP2E1-4Z"
+}' "https://fcm.googleapis.com/fcm/send"
